@@ -1,0 +1,251 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+:root
+{
+    --main-color:#EC3454;
+}
+body
+{
+    font-family: 'Cairo', sans-serif;
+}
+/* start navbar */
+.content1
+{
+    background: #f6f6f6;
+    padding:15px 0;
+}
+.content1 .container-fluid .row .col-lg-5 ul
+{
+    margin:0;
+    padding:0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 33.3333333% 33.3333333% 33.3333333%;
+    text-align: center;
+    margin-top:30px;
+}
+.content1 .container-fluid .row .col-lg-5 ul li a
+{
+    text-decoration: none;
+    color:var(--main-color);
+    font-size: 30px;
+}
+.content1 .container-fluid .row .col-lg-5 ul li form .form-group
+{
+    position: relative;
+    margin-top:5px;
+}
+.content1 .container-fluid .row .col-lg-5 ul li form .form-group input
+{
+    border:0;
+    border-radius: 5px;
+}
+.content1 .container-fluid .row .col-lg-5 ul li form .form-group i
+{
+    position: absolute;
+    top:11px;
+    left:11px;
+    cursor: pointer;
+    color:var(--main-color);
+}
+.content1 .container-fluid .row .col-lg-3 img
+{
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+.content1 .container-fluid .row .col-lg-4 .logo
+{
+    float: left;
+    margin-left: 20px;
+}
+.content1 .container-fluid .row .col-lg-4 img
+{
+    width: 30px;
+    display: block;
+    padding-top: 30px;
+    color: var(--main-color);
+}
+@media(max-width:768px)
+{
+    .content1 .container-fluid .row .col-lg-4 .logo
+    { 
+        position: relative;
+        left:38%;
+    }
+}
+/* end navbar */
+/* start content2 */
+.content2
+{
+    padding:60px 0;
+    text-align: center;
+}
+.content2 .container .row h2
+{
+    color:var(--main-color);
+    font-weight: bold;
+    font-size: 35px;
+}
+.content2 .container .row .add-offer
+{
+    background: #f1f1f1;
+    width:70%;
+    margin:0 auto;
+    border-radius: 15px;
+    padding:50px 70px;
+    box-shadow: 0 2px 5px rgba(0,0,0,.4);
+}
+.content2 .container .row .add-offer form .form-group .upload
+{
+    display: block;
+    width:20%;
+    margin:0 auto;
+    box-shadow: 0 2px 5px rgba(0,0,0,.2);
+}
+.content2 .container .row .add-offer form .form-group p
+{
+    padding:30px 0;
+    font-weight: bold;
+}
+.content2 .container .row .add-offer form .form-group input
+{
+    border-radius:10px;
+    border:0;
+    padding:15px 20px;
+    margin-bottom:20px;
+}
+.content2 .container .row .add-offer form .form-group textarea
+{
+    border-radius:10px;
+    border:0;
+    padding:15px 20px;
+    margin-bottom:20px;
+    resize: none;
+    width:100%;
+    margin-top:20px;
+}
+.content2 .container .row .add-offer form .dates
+{
+    display: flex;
+    text-align: center;
+    margin-top:40px;
+    margin-right:15%;
+}
+.content2 .container .row .add-offer form .form-group .date 
+{
+    position: relative;
+}
+.content2 .container .row .add-offer form .form-group .date i
+{
+    position: absolute;
+    font-size: 25px;
+    top:15px;
+    left:10px;
+}
+#datepicker
+{
+    margin-left: 20px;
+}
+.content2 .container .row .add-offer form .add
+{
+    text-decoration: none;
+    color:#fff;
+    font-size: 30px;
+    font-weight: 600;
+    display: inline-block;
+    background: linear-gradient(to bottom , #dd2b52 , #af124b);
+    border-radius: 25px;
+    padding:10px 120px;
+
+}
+@media(max-width:991px)
+{
+    .content2 .container .row .add-offer 
+    {
+        width:100%;
+        padding:50px 20px;
+    }
+    .content2 .container .row .add-offer form .dates
+    {
+        display: block;
+        margin-right: 0;
+    }
+    .content2 .container .row .add-offer form .dates input
+    {
+        width:100%;
+        margin-right: 0;
+    }
+    .content2 .container .row .add-offer form .add
+    {
+        padding:10px 50px;
+        width:100%;
+    }
+    .content2 .container .row .add-offer form .form-group .upload
+    {
+        width:100%;
+    }
+    .content2 .container .row .add-offer form .form-group .date i
+    {
+        left:10px;
+    }
+}
+/* end content2 */
+/* start footer */
+.footer
+{
+    background: url('../imgs/footerbg.png');
+    background-size: cover;
+    color:#fff;
+    padding:50px;
+}
+.footer .text
+{
+    text-align: right;
+}
+.footer .text .edit
+{
+    display: flex;
+    margin-bottom:30px;
+}
+.footer .text .edit h4
+{
+    margin-right: 15px;
+    padding-top:15px;
+}
+.footer .text p
+{
+    width:60%;
+}
+.footer .text .icons a
+{
+    text-decoration: none;
+    color:#fff;
+    font-size: 30px;
+    margin-left: 20px;
+}
+.footer .text .icons a .fa-facebook-f
+{
+    background: #fff;
+    color:rgb(51, 18, 78);
+    padding:10px 17px;
+    border-radius: 50%;
+}
+.footer .sofra
+{
+    width:50%;
+    display: block;
+    float: left;
+}
+@media(max-width:768px)
+{
+    .footer .text p
+    {
+        width:100%;
+    }
+    .footer .sofra
+    {
+        width:100%;
+        margin-top:50px;
+    }
+}
+/* end footer */

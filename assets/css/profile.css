@@ -1,0 +1,255 @@
+@import url('https://fonts.googleapis.com/css2?family=Cairo&display=swap');
+:root
+{
+    --main-color:#EC3454;
+}
+body
+{
+    font-family: 'Cairo', sans-serif;
+}
+/* start navbar */
+.content1
+{
+    background: #f6f6f6;
+    padding:15px 0;
+}
+.content1 .container-fluid .row .col-lg-5 ul
+{
+    margin:0;
+    padding:0;
+    list-style: none;
+    display: grid;
+    grid-template-columns: 33.3333333% 33.3333333% 33.3333333%;
+    text-align: center;
+    margin-top:30px;
+}
+.content1 .container-fluid .row .col-lg-5 ul li a
+{
+    text-decoration: none;
+    color:var(--main-color);
+    font-size: 30px;
+}
+.content1 .container-fluid .row .col-lg-5 ul li form .form-group
+{
+    position: relative;
+    margin-top:5px;
+}
+.content1 .container-fluid .row .col-lg-5 ul li form .form-group input
+{
+    border:0;
+    border-radius: 5px;
+}
+.content1 .container-fluid .row .col-lg-5 ul li form .form-group i
+{
+    position: absolute;
+    top:11px;
+    left:11px;
+    cursor: pointer;
+    color:var(--main-color);
+}
+.content1 .container-fluid .row .col-lg-3 img
+{
+    width: 150px;
+    display: block;
+    margin: 0 auto;
+}
+.content1 .container-fluid .row .col-lg-4 .logo
+{
+    float: left;
+    margin-left: 20px;
+}
+.content1 .container-fluid .row .col-lg-4 img
+{
+    width: 30px;
+    display: block;
+    padding-top: 30px;
+    color: var(--main-color);
+}
+@media(max-width:768px)
+{
+    .content1 .container-fluid .row .col-lg-4 .logo
+    { 
+        position: relative;
+        left:38%;
+    }
+}
+/* end navbar */
+/* start content2 */
+.content2
+{
+    padding:70px 0;
+    text-align: center;
+}
+.content2 .contact
+{
+    background: linear-gradient(to bottom , #dd2b52 , #af124b);
+    width:70%;
+    padding:50px 70px;
+    text-align: center;
+    margin:0 auto;
+    border-radius: 15px;
+}
+.content2 .contact .icon 
+{
+    
+}
+.content2 .contact .icon i
+{
+    background: #fff;
+    font-size: 50px;
+    margin-bottom:50px;
+    border-radius: 50%;
+    padding:40px;
+}
+.content2 .contact form input
+{
+    border:0;
+    border-radius: 30px;
+    padding:15px 20px;
+    margin-bottom:30px;
+}
+.content2 .contact form input::placeholder
+{
+    color:grey;
+}
+.content2 .contact form textarea
+{
+    border:0;
+    border-radius: 10px;
+    padding:15px 20px;
+    margin-bottom:30px;
+    width:100%;
+    resize: none;
+}
+.content2 .contact form .check 
+{
+    display: grid;
+    grid-template-columns: 33.3333333% 33.3333333% 33.3333333%;
+}
+.content2 .contact form .check .choose
+{
+    position: relative;
+}
+.content2 .contact form .choose .complain
+{
+    color:#fff;
+    font-size: 20px;
+}
+.content2 .contact form .choose .box2
+{
+    position: absolute;
+    top:5px;
+    cursor: pointer;
+    right:145px;
+    width:25px;
+    height:25px;
+    background: #fff;
+    border-radius: 50%;
+}
+.content2 .contact form .choose .box2.active
+{
+    background: rgb(51, 18, 78);
+}
+.content2 .contact form .save
+{
+    background: rgb(51, 18, 78);
+    text-decoration: none;
+    color:#fff;
+    font-size: 25px;
+    display: inline-block;
+    padding:15px 60px;
+    border-radius: 30px;
+    font-weight: bold;
+    margin:100px 0 0;
+}
+@media(max-width:991px)
+{
+    .content2 .contact
+    {
+        width:100%;
+        padding:50px 20px;
+    }
+    .content2 .contact form .check .choose 
+    {
+        margin-bottom:20px;
+    }
+    .content2 .contact form .check .choose .box2
+    {
+        right:65%;
+    }
+}
+@media(max-width:768px)
+{
+    .content2 .contact form .check 
+    {
+        display: block;
+    }
+    .content2 .contact form .check .choose 
+    {
+        margin-bottom:20px;
+    }
+    .content2 .contact form .check .choose .box2
+    {
+        right:65%;
+    }
+}
+/* end content2 */
+/* start footer */
+.footer
+{
+    background: url('../imgs/footerbg.png');
+    background-size: cover;
+    color:#fff;
+    padding:50px;
+}
+.footer .text
+{
+    text-align: right;
+}
+.footer .text .edit
+{
+    display: flex;
+    margin-bottom:30px;
+}
+.footer .text .edit h4
+{
+    margin-right: 15px;
+    padding-top:15px;
+}
+.footer .text p
+{
+    width:60%;
+}
+.footer .text .icons a
+{
+    text-decoration: none;
+    color:#fff;
+    font-size: 30px;
+    margin-left: 20px;
+}
+.footer .text .icons a .fa-facebook-f
+{
+    background: #fff;
+    color:rgb(51, 18, 78);
+    padding:10px 17px;
+    border-radius: 50%;
+}
+.footer .sofra
+{
+    width:50%;
+    display: block;
+    float: left;
+}
+@media(max-width:768px)
+{
+    .footer .text p
+    {
+        width:100%;
+    }
+    .footer .sofra
+    {
+        width:100%;
+        margin-top:50px;
+    }
+}
+/* end footer */
